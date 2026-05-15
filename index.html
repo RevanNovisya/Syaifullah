@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Syaifullah Service</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- AOS ANIMATION -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+
+    <!-- LOADING SCREEN -->
+    <div id="loading">
+
+        <div class="loader"></div>
+
+        <h2>Syaifullah Service</h2>
+
+    </div>
+
+    <!-- NAVBAR -->
+    <nav>
+
+        <div class="logo">
+            Syaifullah.
+        </div>
+
+        <ul class="menu">
+
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#skills">Layanan</a></li>
+            <li><a href="#contact">Kontak</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+
+        <div class="hero-text" data-aos="fade-right">
+
+            <p class="small-title">
+                👋 Halo, Saya Syaifullah
+            </p>
+
+            <h1>
+                Teknisi CCTV <br>
+                & Jaringan Wifi
+            </h1>
+
+            <p class="desc">
+                Melayani pemasangan dan perbaikan CCTV,
+                penguat sinyal wifi, perbaikan wifi,
+                serta pemasangan antena parabola
+                dengan pelayanan profesional.
+            </p>
+
+            <div class="buttons">
+
+                <a href="#skills" class="btn-primary">
+                    Lihat Layanan
+                </a>
+
+                <a href="#contact" class="btn-secondary">
+                    Hubungi Saya
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image" data-aos="fade-left">
+
+            <img src="foto.jpeg" alt="Syaifullah">
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about" data-aos="fade-up">
+
+        <div class="about-card">
+
+            <h2>Tentang Saya</h2>
+
+            <p>
+                Saya adalah teknisi yang berpengalaman
+                dalam pemasangan dan perbaikan CCTV,
+                instalasi penguat wifi,
+                perbaikan jaringan internet,
+                serta pemasangan dan servis antena parabola.
+                Saya selalu mengutamakan kualitas,
+                kerapihan pemasangan,
+                dan kepuasan pelanggan.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+
+        <h2 data-aos="zoom-in">
+            Layanan Saya
+        </h2>
+
+        <div class="skill-container">
+
+            <div class="skill-card" data-aos="fade-up">
+                <h3>Pasang CCTV</h3>
+
+                <p>
+                    Instalasi CCTV rumah,
+                    toko, dan kantor.
+                </p>
+            </div>
+
+            <div class="skill-card" data-aos="fade-up">
+                <h3>Perbaikan CCTV</h3>
+
+                <p>
+                    Servis DVR,
+                    kamera,
+                    dan kabel CCTV.
+                </p>
+            </div>
+
+            <div class="skill-card" data-aos="fade-up">
+                <h3>Penguat Wifi</h3>
+
+                <p>
+                    Pemasangan repeater
+                    dan penguat sinyal wifi.
+                </p>
+            </div>
+
+            <div class="skill-card" data-aos="fade-up">
+                <h3>Perbaikan Wifi</h3>
+
+                <p>
+                    Mengatasi gangguan
+                    jaringan internet.
+                </p>
+            </div>
+
+            <div class="skill-card" data-aos="fade-up">
+                <h3>Pasang Parabola</h3>
+
+                <p>
+                    Instalasi antena parabola
+                    dengan hasil maksimal.
+                </p>
+            </div>
+
+            <div class="skill-card" data-aos="fade-up">
+                <h3>Perbaikan Parabola</h3>
+
+                <p>
+                    Servis receiver
+                    dan antena parabola.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact" data-aos="fade-up">
+
+        <h2>Kontak</h2>
+
+        <div class="contact-box">
+
+            <p>📞 WhatsApp : 082175887377
+
+            <p>📍 Lokasi : Lampung</p>
+
+            <p>📧 Email : syaifullah@gmail.com</p>
+
+            <a href="https://wa.me/6282175887377" class="wa-btn">
+                Hubungi via WhatsApp
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2025 Syaifullah Service
+        </p>
+
+    </footer>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+
+        window.addEventListener("load", function(){
+
+            const loading = document.getElementById("loading");
+
+            loading.style.opacity = "0";
+
+            setTimeout(() => {
+                loading.style.display = "none";
+            }, 500);
+
+        });
+    </script>
+
+</body>
+</html>
